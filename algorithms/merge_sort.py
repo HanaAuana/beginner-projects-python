@@ -10,7 +10,7 @@ def merge_sort(items):
     right = items[middle:]
 
     # Sort each sub-list recursively
-    print("Sort: ", left, right)
+    # print("Sort: ", left, right)
     left = merge_sort(left)
     right = merge_sort(right)
 
@@ -40,7 +40,7 @@ def merge(left, right):
     while r < len(right):
         merged.append(right[r])
         r += 1
-    print("Merged: ", merged)
+    # print("Merged: ", merged)
     return merged
 
 items = [8, 5, 2, 6, 9, 3, 1, 4, 0, 7]
